@@ -51,8 +51,10 @@ def detect_shapes(refined_image, original_image):
     """
     Detect and classify shapes in the image using contours and polygon approximation.
     Args:
+    
         refined_image (np.ndarray): Image after morphological operations.
         original_image (np.ndarray): Original input image for annotation.
+        
     Returns:
         np.ndarray: Annotated image with detected shapes.
     """
@@ -85,6 +87,7 @@ def detect_shapes(refined_image, original_image):
 def main(image_path, output_path):
     """
     Main function to perform shape detection and save the result.
+    
     Args:
         image_path (str): Path to the input image.
         output_path (str): Path to save the annotated image.
